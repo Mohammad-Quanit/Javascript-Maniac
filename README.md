@@ -18,9 +18,9 @@ Now what it will do it will change text of header by Javascript using `DOM` api.
 DOM stands from Document Object Model which is basically a tree like structure in your web page for managing HTML Elements.
 
 
+## Get The Code
 
-
-You can access this code by just going to this Branch `day01-Js-Intro` and check the code.
+You can access this code by just going to this Branch `day01-Js-Intro` or from command prompt `git checkout day01-Js-Intro` and check the code.
 
 
 I will create branch for every topic i cover.
