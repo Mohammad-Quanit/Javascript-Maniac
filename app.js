@@ -3,8 +3,11 @@
 
 var h1 = document.getElementById('header-1');
 var p1 = document.getElementById('para-1');
+var name = "Quanit";
 
 h1.innerText = "This is Header coming from Javascript.";
 
 // you can do this by using innerHTML
 p1.innerHTML = "This is Paragraph coming from Javascript.";
+
+alert('Name is ' + name);
