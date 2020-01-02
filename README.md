@@ -1,14 +1,40 @@
-# Javascript-Maniac - Day 01
-As, this is day one of our class 1, I will describe what Javascript is, how it can be major technology for web and advantages of JavaScript & why should you use it for you projects. Now i am assuming that you have knowledge of HTML & CSS.
+# Javascript-Maniac - Day 02
+## Variables
+Variables, are one of the most common & important concept in programming. A variable is basically a temporary storage in your program or app, which is used to store data for utilizing in your app.
 
-## What is JavaScript?
-JavaScript, often abbreviated as JS, is a high-level, just-in-time compiled, object-oriented programming language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+As we are learning JavaScript, so <b>JavaScript variables</b> are containers for storing data values.
 
-Now you might be Confusing What these terms means? Don't worry I will breifly explain, what these terms means in the next tutorials as we cover. 
+All <b>JavaScript</b> variables must be identified with unique names. These names are called <b>Identifiers.</b>
 
-But for now, I will tell how to start immediately learning <b>Javascript</b>
+Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
 
-### Day - 01 Code Explanation
+The general rules for constructing names for variables (unique identifiers) are:
+
+* Names can contain letters, digits, underscores, and dollar signs.
+* Names must begin with a letter
+* Names can also begin with $ and _ (but we will not use it in this tutorial)
+* Names are case sensitive (y and Y are different variables)
+Reserved words (like JavaScript keywords) cannot be used as names
+
+Example of Variable in <b>JavaScript</b>: `var x = 'Javascript'`
+
+
+## Data Types
+JavaScript variables can hold numbers like 1234 and text values like "Quanit".
+
+In every programming language, text values are called text strings, which itself is a <b>collection of Character</b>
+
+JavaScript can handle many types of data, but for now, just think of numbers and strings.
+
+Strings are written inside double or single quotes. Numbers are written without quotes.
+
+If you put a number in quotes, it will be treated as a text string.
+
+`var pi = 3.14;`  This <b>pi</b> variable is number.
+`var person = "M.Quanit";`  This <b>person</b> variable is string.
+`var stringPi = '3.14';`  This <b>stringPi</b> variable is string because it's in single qoutes.
+
+### Day - 02 Code Explanation
 In this code, i have created html file named `index.html` and javascript file named `app.js`. <br />
 I have linked or connected my Javascript file to html by using `<script src="./app.js"></script>`.  <br />
 I have created an html element `<h1>` with an id of `header-1` & now i am going to show header from javascript.  <br />
@@ -18,7 +44,7 @@ Now what it will do it will change text of header by Javascript using `DOM` api.
 DOM stands from Document Object Model which is basically a tree like structure in your web page for managing HTML Elements.
 
 
-
+<hr />
 
 You can access this code by just going to this Branch `day01-Js-Intro` and check the code.
 
