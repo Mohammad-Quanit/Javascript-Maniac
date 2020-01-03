@@ -1,13 +1,19 @@
-// creating variable for changing h1 content by Javascript
-// A variable is a temporary storage where the value is saved on memory/ram 
+// Adding Operator
 
-var h1 = document.getElementById('header-1');
-var p1 = document.getElementById('para-1');
-var name = "Quanit";
+var addX = 5;
+var addY = 2;
+var addZ = addX + addY;
+var add = document.getElementById('add');
 
-h1.innerText = "This is Header coming from Javascript.";
+add.innerText = 'Addition of ' + addX + ' and ' + addY + ' is ' + addZ;
 
-// you can do this by using innerHTML
-p1.innerHTML = "This is Paragraph coming from Javascript.";
 
-alert('Name is ' + name);
+// Subtract Operator
+
+var subX = 5;
+var subY = 2;
+var subZ = subX - subY;
+var subtract = document.getElementById('subtraction');
+subtract.innerText = 'Subtraction of ' + subX + ' and ' + subY + ' is ' + subZ;
+
+

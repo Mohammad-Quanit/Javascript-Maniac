@@ -1,6 +1,44 @@
-# Javascript-Maniac - Day 02
-## Variables
-Variables, are one of the most common & important concept in programming. A variable is basically a temporary storage in your program or app, which is used to store data for utilizing in your app.
+# Javascript-Maniac - Day 03
+## Arithmetic Operators
+Arithmetic operators perform arithmetic on numbers (literals or variables).
+A typical arithmetic operation operates on two numbers.
+
+The two numbers can be literals:
+
+`var x = 100 + 50`
+
+or variables:
+
+`var x = a + b;`
+
+or expressions:
+
+`var x = (100 + 50) * a;`
+
+The numbers (in an arithmetic operation) are called <b>operands.</b>
+
+The operation (to be performed between the two operands) is defined by an <b>operator.</b>
+
+
+Operand | Operator | Operand
+--- | --- | --- |
+100 | + | 50
+
+
+There are 8 types of operators in Javascript
+
+
+Operator | Description
+--- | --- 
+| + | Addition
+| - | Subtraction
+| * | Multiplication
+|** | Exponentiation
+| / | Division
+| % | Modulus (Remainder)
+|++| Increment
+|--| Decrement
+
 
 As we are learning JavaScript, so <b>JavaScript variables</b> are containers for storing data values.
 
