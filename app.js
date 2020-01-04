@@ -1,69 +1,49 @@
-// Adding Operator
-
-var addX = 5;
-var addY = 2;
-var addZ = addX + addY;
-var add = document.getElementById('add');
-
-add.innerText = '1) ddition of ' + addX + ' and ' + addY + ' is ' + addZ;
-
-
-// Subtract Operator
-
-var subX = 5;
-var subY = 2;
-var subZ = subX - subY;
-var subtract = document.getElementById('subtraction');
-subtract.innerText = '2) Subtraction of ' + subX + ' and ' + subY + ' is ' + subZ;
-
-
-// multiply Operator
-
-var multX = 5;
-var multY = 2;
-var multZ = multX * multY;
-var multiply = document.getElementById('multiplication');
-multiply.innerText = '3) Multiplication of ' + multX + ' and ' + multY + ' is ' + multZ;
+// example 1
+var num = prompt("Enter a number between 1 to 5.")
+num = Number(num)
+switch (num) {
+  case 1:
+    alert( 'You select 1, Too small' );
+    break;
+  case 2:
+    alert( 'You select 2, small' );
+    break;
+  case 3:
+    alert( 'You select 3, Too small' );
+    break;
+  case 4:
+    alert( 'You select 4, Exactly!' );
+    break;
+  case 5:
+    alert( 'You select 5, Too large' );
+    break;
+  default:
+    alert( "I don't know such values" );
+}
 
 
-// exponentiation Operator
-
-var expX = 5;
-var expZ = expX ** 2;   // squeare of 5
-var exponentiation = document.getElementById('exponentiation');
-exponentiation.innerText = '4) Exponentiation of ' + expX + ' is ' + expZ;
-
-// Division Operator
-
-var divX = 10;
-var divY = 2;
-var divZ = divX / divY;
-var division = document.getElementById('division');
-division.innerText = '5) Division of ' + divX + ' and ' + divY + ' is ' + divZ;
-
-
-// Modulus Operator
-
-var modX = 23;
-var modY = 7;
-var modZ = modX % modY;
-var modulus = document.getElementById('modulus');
-modulus.innerText = '6) Modulus (Remainder) of ' + modX + ' and ' + modY + ' is ' + modZ;
-
-
-// Increment Operator
-
-var incX = 23;
-incX++;
-var incZ = incX;
-var increment = document.getElementById('increment');
-increment.innerText = '7) Increment of ' + 23 + ' is ' + incZ;
-
-
-// Decrement Operator
-
-var decX = 23;
-decX--;
-var decZ = decX;
-var decrement = document.getElementById('decrement');
-decrement.innerText = '8) Decrement of ' + 23 + ' is ' + decZ;
+// example 2   ---- new Date().getDay is for current day
+let day = "";
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+     day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+}
+document.getElementById('currentDate').innerText = `Today is ${day}`;
