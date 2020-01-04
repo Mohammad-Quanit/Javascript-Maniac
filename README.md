@@ -84,7 +84,7 @@ DOM stands from Document Object Model which is basically a tree like structure i
 
 <hr />
 
-You can access this code by just going to this Branch `day01-Js-Intro` and check the code.
+You can access this code by just going to this Branch `day03-Js-Arithmetic-Operators` and check the code.
 
 
 I will create branch for every topic i cover.
@@ -95,7 +95,7 @@ You just have to follow these steps:
 
 1) :octocat: Fork this github repository by typing in command propmt `git clone https://github.com/Mohammad-Quanit/Javascript-Maniac.git`.
 
-2) :octocat: Checkout or switch to branch of topic you want to get code for `git checkout day01-Js-Intro`
+2) :octocat: Checkout or switch to branch of topic you want to get code for `git checkout day03-Js-Arithmetic-Operators`
 
 You can suggest anything you want like how it should be or not. 
 
