@@ -1,90 +1,52 @@
-# Javascript-Maniac - Day 03
-## Arithmetic Operators
-Arithmetic operators perform arithmetic on numbers (literals or variables).
-A typical arithmetic operation operates on two numbers.
+# Javascript-Maniac - Day 05
+## Interaction: alert, prompt, confirm
+Today we'll cover JavaScript language “as is”, without environment-specific tweaks.
 
-The two numbers can be literals:
+As we still be using the browser as our demo environment, so we should know at least a few of its user-interface functions. Today, we'll cover get familiar with the browser functions alert, prompt and confirm.
 
-`var x = 100 + 50`
+# alert
 
-or variables:
+syntax:
 
-`var x = a + b;`
+`alert('Hello');`
 
-or expressions:
+This shows a message Hello and pauses script execution until the user presses “OK”.
 
-`var x = (100 + 50) * a;`
+# prompt
 
-The numbers (in an arithmetic operation) are called <b>operands.</b>
+The function `prompt` accepts two arguments:
 
-The operation (to be performed between the two operands) is defined by an <b>operator.</b>
+`result = prompt(title, [default]);`
 
+It shows a modal window with a text message, an input field for the visitor, and the buttons OK/Cancel.
 
-Operand | Operator | Operand
---- | --- | --- |
-100 | + | 50
+## title
+First Parameter will be the title which is a type of string, which indicating something.
 
+## default
+An optional second parameter, the initial value for the input field.
+The visitor may type something in the prompt input field and press OK. Or they can cancel the input by pressing Cancel or hitting the `Esc` key.
 
-There are 8 types of operators in Javascript
+The call to `prompt` returns the text from the input field or `null` if the input was canceled.
 
+```javascript
+  var age = prompt('How old are you?', 100);
+  alert(`You are ${age} years old!`); // You are 100 years old!
+```
 
-Operator | Description
---- | --- 
-| + | Addition
-| - | Subtraction
-| * | Multiplication
-|** | Exponentiation
-| / | Division
-| % | Modulus (Remainder)
-|++| Increment
-|--| Decrement
+## confirm
 
+The function confirm shows a modal window with a question and two buttons: OK and Cancel.
+The result is `true` if OK is pressed and `false` otherwise.
 
-As we are learning JavaScript, so <b>JavaScript variables</b> are containers for storing data values.
-
-All <b>JavaScript</b> variables must be identified with unique names. These names are called <b>Identifiers.</b>
-
-Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
-
-The general rules for constructing names for variables (unique identifiers) are:
-
-* Names can contain letters, digits, underscores, and dollar signs.
-* Names must begin with a letter
-* Names can also begin with $ and _ (but we will not use it in this tutorial)
-* Names are case sensitive (y and Y are different variables)
-Reserved words (like JavaScript keywords) cannot be used as names
-
-Example of Variable in <b>JavaScript</b>: `var x = 'Javascript'`
-
-
-## Data Types
-JavaScript variables can hold numbers like 1234 and text values like "Quanit".
-
-In every programming language, text values are called text strings, which itself is a <b>collection of Character</b>
-
-JavaScript can handle many types of data, but for now, just think of numbers and strings.
-
-Strings are written inside double or single quotes. Numbers are written without quotes.
-
-If you put a number in quotes, it will be treated as a text string.
-
-`var pi = 3.14;`  This <b>pi</b> variable is number.
-`var person = "M.Quanit";`  This <b>person</b> variable is string.
-`var stringPi = '3.14';`  This <b>stringPi</b> variable is string because it's in single qoutes.
-
-### Day - 02 Code Explanation
-In this code, i have created html file named `index.html` and javascript file named `app.js`. <br />
-I have linked or connected my Javascript file to html by using `<script src="./app.js"></script>`.  <br />
-I have created an html element `<h1>` with an id of `header-1` & now i am going to show header from javascript.  <br />
-Now in `app.js` file, I have created a variable `var h1 = document.getElementById('header-1');` and get the reference of html header in js. Now i am changing the content of header by js using `h1.innerText = "This is Header coming from Javascript";` <br />
-
-Now what it will do it will change text of header by Javascript using `DOM` api.  <br />
-DOM stands from Document Object Model which is basically a tree like structure in your web page for managing HTML Elements.
-
+```javascript
+  var isBoss = confirm("Are you the boss?");
+  alert( isBoss ); // true if OK is pressed
+```
 
 <hr />
 
-You can access this code by just going to this Branch `day03-Js-Arithmetic-Operators` and check the code.
+You can access this code by just going to this Branch `day05-Js-Window-Interaction` and check the code.
 
 
 I will create branch for every topic i cover.
@@ -95,7 +57,7 @@ You just have to follow these steps:
 
 1) :octocat: Fork this github repository by typing in command propmt `git clone https://github.com/Mohammad-Quanit/Javascript-Maniac.git`.
 
-2) :octocat: Checkout or switch to branch of topic you want to get code for `git checkout day03-Js-Arithmetic-Operators`
+2) :octocat: Checkout or switch to branch of topic you want to get code for `git checkout day05-Js-Window-Interaction`
 
 You can suggest anything you want like how it should be or not. 
 
