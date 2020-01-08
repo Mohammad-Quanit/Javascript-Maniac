@@ -1,19 +1,15 @@
-// Alert example
-var alertBtn = document.getElementById('forAlert');
-alertBtn.addEventListener('click', function() {
-  alert('This is just alert.')
+var alert = alert('Welcome...');
+
+var addBtn = document.getElementById('add-btn');
+var result = document.getElementById('answer');
+var a = Number(prompt('Please enter a number?'));
+var b = Number(prompt('Please enter 2nd number?'));
+
+
+addBtn.addEventListener('click', function() {
+  result.innerHTML = add(a, b);
 });
 
-// Prompt example
-var promptBtn = document.getElementById('forPrompt');
-promptBtn.addEventListener('click', function() {
-  var age = prompt('How old are you?');
-  alert('You are ' + age + ' years old!');
-});
-
-// Prompt example
-var confirmBtn = document.getElementById('forConfirm');
-confirmBtn.addEventListener('click', function() {
-  var isBoss = confirm("Are you the boss?");
-  alert( isBoss ); // true if OK is pressed
-});
+function add(a, b) {
+  return a + b;
+}

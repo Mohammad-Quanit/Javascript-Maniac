@@ -1,48 +1,74 @@
-# Javascript-Maniac - Day 05
-## Interaction: alert, prompt, confirm
-Today we'll cover JavaScript language “as is”, without environment-specific tweaks.
+# Javascript-Maniac - Day 06
+## Function
+Sometimes, we need to perform some action on many occasions, like for adding two values or calculating some other inputs provided by user. So we create `functions` for doing specific tasks.
 
-As we still be using the browser as our demo environment, so we should know at least a few of its user-interface functions. Today, we'll cover get familiar with the browser functions alert, prompt and confirm.
+`Functions` are the main <b>building blocks</b> of the program. They allow the code to be called many times without repetition.
 
-# alert
+We’ve already seen examples of built-in functions, like alert(message), prompt(message, default) and confirm(question). But we can create functions of our own as well.
 
-syntax:
-
-`alert('Hello');`
-
-This shows a message Hello and pauses script execution until the user presses “OK”.
-
-# prompt
-
-The function `prompt` accepts two arguments:
-
-`result = prompt(title, [default]);`
-
-It shows a modal window with a text message, an input field for the visitor, and the buttons OK/Cancel.
-
-## title
-First Parameter will be the title which is a type of string, which indicating something.
-
-## default
-An optional second parameter, the initial value for the input field.
-The visitor may type something in the prompt input field and press OK. Or they can cancel the input by pressing Cancel or hitting the `Esc` key.
-
-The call to `prompt` returns the text from the input field or `null` if the input was canceled.
+For creating a function, we use declaration:
 
 ```javascript
-  var age = prompt('How old are you?', 100);
-  alert(`You are ${age} years old!`); // You are 100 years old!
+function add(a, b) {
+  return a + b;
+}
 ```
 
-## confirm
+The `function` keyword goes first, then goes the name of the function, then a list of parameters between the parentheses (comma-separated, empty in the example above) and finally the code of the function, also named <b>the function body</b>, between curly braces.
 
-The function confirm shows a modal window with a question and two buttons: OK and Cancel.
-The result is `true` if OK is pressed and `false` otherwise.
+Now we called that function by simple write:
 
 ```javascript
-  var isBoss = confirm("Are you the boss?");
-  alert( isBoss ); // true if OK is pressed
+function add(a, b) {
+  return a + b;
+}
+
+add(2, 2);   // return 4
 ```
+
+or if we console.log it, it will show the result:
+```javascript
+function add(a, b) {
+  return a + b;
+}
+
+console.log(add(2, 2))  // print 4;
+```
+
+## Local Variables
+
+A variable declared inside a function is only visible inside that function.
+
+For example:
+
+```javascript
+function showMessage() {
+  let message = "Hello, I'm JavaScript!"; // local variable
+
+  alert( message );
+}
+
+showMessage(); // Hello, I'm JavaScript!
+
+alert( message ); // <-- Error! The variable is local to the function
+```
+
+## Outer Variables
+
+A function can access an outer variable as well, for example:
+
+```javascript
+let userName = 'John';
+
+function showMessage() {
+  let message = 'Hello, ' + userName;
+  alert(message);
+}
+
+showMessage(); // Hello, John
+```
+
+
 
 <hr />
 
