@@ -1,7 +1,39 @@
-# Javascript-Maniac
-As, there are many of my friends & developers who have asked me to teach JavaScript. Here's how i will do it. I am starting an Initiative for creating <b>JavaScript</b> Tutorials for those, who really want to learning JavaScript.
+# Javascript-Maniac - Day 04
+## Switch Statement
+The <strong>`switch`</strong> statement is used to perform different actions based on different conditions.
+A <strong>switch</strong> statement can replace multiple if checks and it usually used, when we have to check multiple `if else` conditions. 
 
-In this course, I will do cover JavaScript topics from basics to advanced for 100 days as it will be my <b>#100DaysOfCode</b> challenge as well,so nothing could be better for me to teach & contribute at the same time. 
+It gives a more descriptive way to compare a value with multiple variants.
+
+## Syntax
+
+The `switch` has one or more `case` blocks and an optional default.
+
+```
+switch(x) {
+  case 'value1':  // if (x === 'value1')
+    ...
+    [break]
+
+  case 'value2':  // if (x === 'value2')
+    ...
+    [break]
+
+  default:
+    ...
+    [break]
+}
+```
+## How it Works
+
+* The switch expression is evaluated once.
+* The value of the expression is compared with the values of each case.
+* If there is a match, the associated block of code is executed.
+
+<hr />
+
+You can access this code by just going to this Branch `day01-Js-switch-case` and check the code.
+
 
 I will create branch for every topic i cover.
 
@@ -11,7 +43,7 @@ You just have to follow these steps:
 
 1) :octocat: Fork this github repository by typing in command propmt `git clone https://github.com/Mohammad-Quanit/Javascript-Maniac.git`.
 
-2) :octocat: Checkout or switch to branch of topic you want to get code for `git checkout day01-Js-Basics`
+2) :octocat: Checkout or switch to branch of topic you want to get code for `git checkout day01-Js-switch-case`
 
 You can suggest anything you want like how it should be or not. 
 
